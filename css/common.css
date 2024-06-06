@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333;
+  font-family: "Noto Sans Hebrew New", sans-serif;
+  font-size: 1.6em;
+  font-weight: 300;
+  /* line-height: 1.5; */
+  text-align: center;
+}
+
+body img {
+  width: 100%;
+}
+
+a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+a:hover {
+  opacity: 0.5;
+  transition: all 0.5s ease 0s;
+}
+
+ul,
+ol {
+  list-style: none;
+}
