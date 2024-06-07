@@ -27,6 +27,7 @@
 
   <!-- スタイルシートを読み込むための記述 -->
   <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/common.css" />
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
@@ -47,6 +48,50 @@
           alt="インスタグラム"></a>
     </div>
   </header>
+    <!-- ここからメニュー -->
+    <menu class="menu">
+      <a class="menu__inner">
+        <p class="menu__inner__title">MENU</p>
+        <p class="menu__inner__text">メニュー</p>
+      </a>
+      
+      <a class="menu__container">
+        <div class="menu__container__img"><img class="menu__container__img__anpan" src="./img/menu/anpan.jpg" alt="あんぱんの画像です"></div>
+        <div class="menu__container__title">あんぱん</div>
+        <div class="menu__container__cost">¥300</div>
+        <div class="menu__container__text">ふんわり食感なあんぱん。<br>豊かな香りが広がります。</div>
+      </a>
+      <a class="menu__container">
+        <a class="menu__container__img"><img class="menu__container__img__francepan" src="./img/menu/francepan.jpg" alt="フランスパンの画像です"></a>
+        <div class="menu__container__title">フランスパン</div>
+        <div class="menu__container__cost">¥400</div>
+        <div class="menu__container__text">とてもシンプルなパン。<br>何にでも合います。</div>
+      </a>
+      <a class="menu__container">
+        <a class="menu__container__img"><img class="menu__container__img__kurowassan" src="./img/menu/kurowassan.jpg" alt="クロワッサンの画像です"></a>
+        <div class="menu__container__title">クロワッサン</div>
+        <div class="menu__container__cost">¥100</div>
+        <div class="menu__container__text">サクサクふわふわなクロワッサン。<br>当店人気No.1の商品です。</div>
+      </a>
+      <a class="menu__container">
+        <a class="menu__container__img"><img class="menu__container__img__capcake" src="./img/menu/cupcake.jpg" alt="カップケーキの画像です"></a>
+        <div class="menu__container__title">カップケーキ</div>
+        <div class="menu__container__cost">¥500</div>
+        <div class="menu__container__text">甘くて美味しいカップケーキ。<br>ご褒美におひとついかがですか。</div>
+      </a>
+      <a class="menu__container">
+        <a class="menu__container__img"><img class="menu__container__img__donut" src="./img/menu/donut.jpg" alt="ドーナツの画像です"></a>
+        <div class="menu__container__title">ドーナツ</div>
+        <div class="menu__container__cost">¥200</div>
+        <div class="menu__container__text">ついつい食べちゃうドーナツ。<br>牛乳と一緒に食べると最高です。</div>
+      </a>
+      <a class="menu__container">
+        <a class="menu__container__img"><img class="menu__container__img__anpan" src="./img/menu/sandwich.jpg" alt="サンドイッチの画像です"></a>
+        <div class="menu__container__title">サンドイッチ</div>
+        <div class="menu__container__cost">¥400</div>
+        <div class="menu__container__text">食べやすいサンドイッチ。<br>お昼はこれで決まりです。</div>
+      </a>  
+    </menu>
   <section class="shop">
     <div class="shop__inner inner">
       <div class="container">
@@ -108,6 +153,7 @@
       <li class="footer__site-map__item"><a href="">MENU</a></li>
     </ul>
     <p class="footer__copy"><small>&copy;Natural.</small></p>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
