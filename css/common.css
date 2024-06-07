@@ -11,11 +11,12 @@ html {
 
 body {
   background-color: #ffffff;
-  color: #333;
-  font-family: "Noto Sans Hebrew New", sans-serif;
+  color: #5f5344;
+  font-family: "Noto Serif JP", sans-serif;
   font-size: 1.6em;
   font-weight: 300;
-  /* line-height: 1.5; */
+  letter-spacing: 0.15em;
+  line-height: 1.8;
   text-align: center;
 }
 
@@ -42,4 +43,197 @@ a:hover {
 ul,
 ol {
   list-style: none;
+}
+
+
+/* =====================================================
+section_head
+===================================================== */
+
+
+.section__head {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.section__head__title {
+  font-size: 36px;
+  font-family: "Libre Baskerville", serif;
+  letter-spacing: 0.3em;
+  font-weight: 400;
+}
+
+.section__head__text {
+  letter-spacing: 0.3em;
+}
+
+
+/* =====================================================
+button
+===================================================== */
+
+.button {
+  display: inline-block;
+  color: #fff;
+  background: #5f5344;
+  padding: 25px 40px;
+  font-weight: 400;
+  width: 360px;
+  border-radius: 128px;
+  transition: background-color 0.3s;
+  position: relative;
+}
+
+.button:hover {
+  background: #000;
+}
+
+.button span {
+  position: relative;
+  padding-right: 25px;
+}
+
+.button span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: url(../img/arrow-right.png) no-repeat center center/contain;
+}
+
+
+/* =====================================================
+header
+===================================================== */
+
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  color: #5f5344;
+  height: 120px;
+}
+
+.header__logo {
+  padding-left: 65px;
+  width: 100px;
+}
+
+.header__logo__item__title {
+  color: #5f5344;
+  font-size: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 5px;
+}
+
+.header__logo__item__icon {
+  width: 120px;
+  height: auto;
+  background-color: #5f5344;
+}
+
+.header__nav {
+  margin-left: auto;
+  display: flex;
+}
+
+.header__nav__list {
+  display: flex;
+}
+
+.header__nav__list__item:not(:first-child) {
+  margin-left: 40px;
+}
+
+.header__nav__list__item {
+  font-size: 16px;
+  list-style: none;
+  line-height: 1.4;
+  font-weight: 400;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 0.15em;
+}
+
+.header__nav__list__item a {
+  text-decoration: none;
+  padding-bottom: 1px;
+  color: #5f5344;
+}
+
+.header__nav__icon__img {
+  width: 20px;
+  height: 20px;
+  background-color: #5f5344;
+  margin-left: 40px;
+  margin-right: 65px;
+}
+
+
+/* =====================================================
+footer
+===================================================== */
+
+.footer {
+  background-color: #5f5344;
+  color: #fff;
+  letter-spacing: 0.15em;
+  padding: 75px 0 0;
+}
+
+.footer__title {
+  font-weight: 400;
+}
+
+.footer__logo {
+  width: 145px;
+  display: block;
+  margin: 5px auto 0;
+}
+
+.footer__sns {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.footer__sns-icon a {
+  width: 20px;
+}
+
+.footer__sns-icon a img {
+  /* padding: 0 10px; */
+}
+
+.footer__address {
+  margin-top: 40px;
+}
+
+.footer__address__item {
+  display: block;
+  margin-top: 15px;
+}
+
+.footer__address__item:first-of-type {
+  margin: 0;
+}
+
+.footer__site-map {
+  background-color: #3f362c;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 75px;
+  padding: 30px 0;
+}
+
+.footer__copy {
+  padding: 40px 0;
 }
