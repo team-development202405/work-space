@@ -68,44 +68,58 @@ slider
 /* =====================================================
 menu
 ===================================================== */
-.menu__inner {
-  text-align: center;
-  margin: 80px 0;
-  padding: 80px 0;
-  background-color: #5f53440D;
+.menu{
+  margin: 120px auto;
+  max-width: 1200px;
 }
 
-.menu__inner__title {
-  font-size: 42px;
-  font-weight: 400;
-  height: auto;
-  letter-spacing: 0.3em;
-  line-height: 1.8;
-  width: auto;
-  max-width: 100%;
-}
-
-.menu__inner__text {
-  font-size: 18px;
-  font-weight: 600;
-  height: auto;
-  letter-spacing: 0.3em;
-  line-height: 1.8;
-  padding: 0 5px;
-  width: auto;
-  max-width: 100%;
-}
-
-
-.menu__container {
+.menu__items{
   display: flex;
   flex-wrap: wrap;
-  background-color: blue;
+  justify-content: space-around;
+  gap: 50px;
 }
 
-.menu__container__img {
+.menu__items__item{
+  width: calc(33.333% - 50px);
+}
+
+.menu__items__item__img{
+  width: 100%;
   height: 220px;
-  width: 300px;
+}
+
+.menu__items__item__img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.menu__items__details{
+  padding: 20px;
+  color: #5f5344;
+  text-align: left;
+  font-weight: 200;
+}
+
+.menu__items__details__title{
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.menu__items__details__cost{
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.menu__items__details__description{
+  font-size: 1.4rem;
+}
+
+.menu__button {
+  margin-top: 100px;
+  text-align: center;
 }
 
 

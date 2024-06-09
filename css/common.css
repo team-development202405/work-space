@@ -112,13 +112,13 @@ header
 
 .header {
   position: fixed;
+  z-index: 100;
   top: 0;
-  right: 0;
-  left: 0;
-  display: flex;
   align-items: center;
-  color: #5f5344;
   height: 120px;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
 }
 
 .header__logo {
@@ -127,16 +127,18 @@ header
 }
 
 .header__logo__item__title {
-  color: #5f5344;
-  font-size: 10px;
-  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
   margin-bottom: 5px;
+  color: #5f5344;
+  flex: none;
+  font-weight: 700;
+  width: 156px;
+  justify-content: flex-start;
 }
 
 .header__logo__item__icon {
-  width: 120px;
+  width: 156px;
   height: auto;
-  background-color: #5f5344;
 }
 
 .header__nav {
@@ -153,12 +155,8 @@ header
 }
 
 .header__nav__list__item {
-  font-size: 16px;
+  font-size: 1.6rem;
   list-style: none;
-  line-height: 1.4;
-  font-weight: 400;
-  font-family: 'Times New Roman', Times, serif;
-  letter-spacing: 0.15em;
 }
 
 .header__nav__list__item a {
@@ -168,11 +166,12 @@ header
 }
 
 .header__nav__icon__img {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   background-color: #5f5344;
   margin-left: 40px;
   margin-right: 65px;
+  border-radius: 50%;
 }
 
 
