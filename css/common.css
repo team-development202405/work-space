@@ -114,8 +114,8 @@ header
   z-index: 100;
   top: 0;
   align-items: center;
-  height: 120px;
-  background-color: #fff;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.7);
   width: 100%;
   display: flex;
 }
@@ -166,12 +166,13 @@ header
 
 .header__nav__icon__img {
   width: 25px;
-  height: 25px;
-  background-color: #5f5344;
   margin-left: 40px;
   margin-right: 65px;
-  border-radius: 50%;
 }
+
+/* =====================================================
+footer
+===================================================== */
 
 /* =====================================================
 footer
@@ -191,7 +192,7 @@ footer
 .footer__logo {
   width: 145px;
   display: block;
-  margin: 5px auto 0;
+  margin: 40px auto 0;
 }
 
 .footer__sns {
@@ -232,5 +233,6 @@ footer
 }
 
 .footer__copy {
-  padding: 40px 0;
+  font-size: 1.4rem;
+  padding: 20px 0;
 }

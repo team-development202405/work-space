@@ -3,7 +3,7 @@ mv
 ===================================================== */
 
 .mv {
-  margin-top: 120px;
+  margin-top: 80px;
   padding-bottom: 50px;
 }
 
@@ -42,77 +42,114 @@ mv
   margin-top: 15px;
   font-weight: 400;
 }
+
+/* =====================================================
+lead
+===================================================== */
+.lead_wrap {
+  height: 460px;
+  background-image: url(../img/lead_bg.jpg);
+  background-position: 80%;
+  background-size: cover;
+  margin-top: 50px;
+}
+
+.lead {
+  height: 100%;
+  background-color: rgba(3, 3, 3, 0.75);
+  color: #fff;
+
+}
+
+.lead__title {
+  font-size: 2.4rem;
+  font-weight: 400;
+  padding-top: 70px;
+}
+
+.lead__text {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 45px 0 0;
+  text-align: left;
+}
+
+
 /* =====================================================
 slider
 ===================================================== */
+
 .slider {
-  width: 40%;
-  height: 300px;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.slides {
+.slider__list {
+  width: 100%;
   display: flex;
   transition: transform 1s ease;
 }
 
-.slide {
+.slider__list__item {
   min-width: 100%;
 }
 
-.slide img {
-  width: 100%;
+.slider__list__item img {
+  height: 200px;
+  object-fit: cover;
 }
 
 /* =====================================================
 menu
 ===================================================== */
-.menu{
+.menu {
   margin: 120px auto;
   max-width: 1200px;
 }
 
-.menu__items{
+.menu__items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 50px;
 }
 
-.menu__items__item{
+.menu__items__item {
   width: calc(33.333% - 50px);
 }
 
-.menu__items__item__img{
+.menu__items__item__img {
   width: 100%;
   height: 220px;
 }
 
-.menu__items__item__img img{
+.menu__items__item__img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 15px;
 }
 
-.menu__items__details{
+.menu__items__details {
   padding: 20px;
   color: #5f5344;
   text-align: left;
   font-weight: 200;
 }
 
-.menu__items__details__title{
+.menu__items__details__title {
   font-size: 1.6rem;
   font-weight: 400;
 }
 
-.menu__items__details__cost{
+.menu__items__details__cost {
   font-size: 1.4rem;
   margin-bottom: 10px;
 }
 
-.menu__items__details__description{
+.menu__items__details__description {
   font-size: 1.4rem;
 }
 
@@ -135,24 +172,25 @@ shop
 .shop__content {
   display: flex;
   flex-direction: row;
-  gap: 75px;
+  gap: 60px;
   justify-content: center;
   align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .shop__info {
-  width: 495px;
+  /* width: 495px; */
   text-align-last: left;
 }
 
-.shop__info__text {
-  font-size: 14px;
-}
-
-.shop__info__title {
-  font-size: 20px;
+.shop__info__title img {
+  display: block;
+  width: 120px;
+  margin: 0 auto;
+  /* font-size: 20px;
   font-weight: 400;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.15em; */
 }
 
 .shop__lists {
@@ -203,9 +241,8 @@ shop
 
 .shop__image img {
   border-radius: 20px;
-  max-width: 528px;
-  width: 100%;
-  height: 370px;
+  max-width: 480px;
+  /* height: 370px; */
   object-fit: cover;
 }
 
@@ -219,6 +256,50 @@ shop
 map
 ===================================================== */
 
-.iframe__wrapper iframe{
+.iframe__wrapper iframe {
   vertical-align: bottom;
+}
+
+/* =====================================================
+shopページ
+===================================================== */
+.gallery.section__head {
+  background-color: #eee;
+  padding: 80px 0 120px;
+  margin-bottom: 0;
+}
+
+.gallery__content {
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.gallery__content.f-reverse {
+  flex-flow: row-reverse;
+}
+
+.gallery__content-img {
+  width: 35%;
+  border-radius: 0 40px 40px;
+}
+
+.gallery__content-img img {
+  height: 350px;
+  border-radius: 0 40px 40px;
+  object-fit: cover;
+}
+
+.gallery__content-item {
+  width: 40%;
+}
+
+.gallery__content-item__title {
+  font-size: 2rem;
+}
+
+.gallery__content-item__text {
+  margin-top: 20px;
+  text-align: left;
 }
