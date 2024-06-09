@@ -14,13 +14,13 @@ mv
 
 .mv__slider {
   width: 100%;
+  border-radius: 40px;
   overflow: hidden;
 }
 
 .mv__slider img {
   width: 100%;
   height: 630px;
-  border-radius: 40px;
   object-fit: cover;
 }
 
@@ -42,7 +42,6 @@ mv
   margin-top: 15px;
   font-weight: 400;
 }
-
 /* =====================================================
 slider
 ===================================================== */
@@ -143,6 +142,7 @@ shop
 
 .shop__info {
   width: 495px;
+  text-align-last: left;
 }
 
 .shop__info__text {
@@ -212,4 +212,13 @@ shop
 .shop__button {
   margin-top: 100px;
   text-align: center;
+}
+
+
+/* =====================================================
+map
+===================================================== */
+
+.iframe__wrapper iframe{
+  vertical-align: bottom;
 }
