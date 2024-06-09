@@ -21,3 +21,37 @@ $(function () {
     ],
   });
 });
+
+// topのスライダー
+// script.js
+$(document).ready(function () {
+  var currentIndex = 0;
+  var slides = $('.slider__list__item');
+  var slideCount = slides.length;
+  var slideWidth = $('.slider__list__item').width();
+
+  function changeBackground() {
+    currentIndex++;
+    if (currentIndex < slideCount - 1) {
+      $('.slider__list').css({
+        'transform': 'translateX(' + (-100 * currentIndex) + '%)',
+        'transition': 'transform 1s ease'
+      });
+    } else {
+      $('.slider__list').css({
+        'transform': 'translateX(' + (-100 * currentIndex) + '%)',
+        'transition': 'transform 1s ease'
+      });
+      // 次のスライドへの移動が完了した後に先頭に戻る
+      setTimeout(function () {
+        $('.slider__list').css({
+          'transform': 'translateX(0)',
+          'transition': 'none'
+        });
+        currentIndex = 0;
+      }, 1000); // アニメーションの時間に合わせる
+    }
+  }
+
+  setInterval(changeBackground, 3000); // 3秒ごとにスライドを切り替え
+});
