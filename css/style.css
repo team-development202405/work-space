@@ -28,19 +28,34 @@ mv
   position: absolute;
   bottom: 75px;
   left: 125px;
+  text-align-last: left;
 }
+
 
 .mv__title {
   color: #fff;
-  font-size: 30px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.mv__lead {
+  color: #fff;
+  font-size: 24px;
   font-weight: 400;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .mv__text {
   color: #fff;
-  font-size: 15px;
-  margin-top: 15px;
+  font-size: 18px;
+  margin-top: 20px;
   font-weight: 400;
+  text-align: center;
+  line-height: 1.6;
 }
 
 /* =====================================================
