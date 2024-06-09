@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <!-- 文字コードの指定をする -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- スマホ、タブレット、PCのレスポンし表示するための記述 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- サイトのアイコンを表示する記述 -->
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+
+  <!-- サイトの検索にヒットしないようにする記述 -->
+  <meta name="robots" content="noindex" />
+
+  <!-- サイトのタイトルを表示するための記述 -->
+  <title>BAKERY</title>
+  <!-- サイトの概要を表示するための記述 -->
+  <meta name="description" content="--サイトの概要を入力してください--" />
+
+  <!-- GoogleFontsを読み込むための記述 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif+JP:wght@200..900&display=swap"
+    rel="stylesheet" />
+
+  <!-- slickを読み込むための記述 -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+  <!-- スタイルシートを読み込むための記述 -->
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__logo">
+      <a class="header__logo__item">
+        <h1 class="header__logo__item__title"><img class="header__logo__item__icon" src="./img/common_logo.png"
+            alt="ロゴ"></h1>
+      </a>
+    </div>
+    <div class="header__nav">
+      <ul class="header__nav__list">
+        <li class="header__nav__list__item"><a href="">HOME</a></li>
+        <li class="header__nav__list__item"><a href="">MENU</a></li>
+        <li class="header__nav__list__item"><a href="">SHOP</a></li>
+      </ul>
+      <a class="header__nav__icon" href=""><img class="header__nav__icon__img" src="./img/Instagram_logo-c.svg"
+          alt="Instagram"></a>
+    </div>
+  </header>
+  <section class="menu">
+    <div class="section__head">
+      <h2 class="section__head__title">MENU</h2>
+      <p class="section__head__text">おすすめメニュー</p>
+    </div>
+
+    <div class="menu__items">
+      <a class="menu__items__item">
+        <div class="menu__items__item__img">
+          <img class="menu__items__item__img__anpan" src="./img/menu/anpan.jpg" alt="あんぱんの画像です">
+        </div>
+        <div class="menu__items__details">
+          <h3 class="menu__items__details__title">あんぱん</h3>
+          <p class="menu__items__details__cost">¥300</p>
+          <p class="menu__items__details__description">ふんわり食感なあんぱん。<br>豊かな香りが広がります。</p>
+        </div>
+      </a>
+      <a class="menu__items__item">
+        <div class="menu__items__item__img">
+          <img class="menu__items__item__img__francepan" src="./img/menu/francepan.jpg" alt="フランスパンの画像です">
+        </div>
+        <div class="menu__items__details">
+          <h3 class="menu__items__details__title">フランスパン</h3>
+          <p class="menu__items__details__cost">¥400</p>
+          <p class="menu__items__details__description">とてもシンプルなパン。何にでも合います。</p>
+        </div>
+      </a>
+      <a class="menu__items__item">
+        <div class="menu__items__item__img">
+          <img class="menu__items__item__img__kurowassan" src="./img/menu/kurowassan.jpg" alt="クロワッサンの画像です">
+        </div>
+        <div class="menu__items__details">
+          <h3 class="menu__items__details__title">クロワッサン</h3>
+          <p class="menu__items__details__cost"> ¥100</p>
+          <p class="menu__items__details__description">サクサクふわふわなクロワッサン。<br>当店人気No.1の商品です。</p>
+        </div>
+      </a>
+      <a class="menu__items__item">
+        <div class="menu__items__item__img">
+          <img class="menu__items__item__img__cupcake" src="./img/menu/cupcake.jpg" alt="カップケーキの画像です">
+        </div>
+        <div class="menu__items__details">
+          <h3 class="menu__items__details__title">カップケーキ</h3>
+          <p class="menu__items__details__cost">¥500</p>
+          <p class="menu__items__details__description">甘くて美味しいカップケーキ。<br>ご褒美におひとついかがですか。</p>
+        </div>
+      </a>
+      <a class="menu__items__item">
+        <div class="menu__items__item__img">
+          <img class="menu__items__item__img__donut" src="./img/menu/donut.jpg" alt="ドーナツの画像です">
+        </div>
+        <div class="menu__items__details">
+          <h3 class="menu__items__details__title">ドーナツ</h3>
+          <p class="menu__items__details__cost">¥200</p>
+          <p class="menu__items__details__description"> ついつい食べちゃうドーナツ。<br>牛乳と一緒に食べると最高です。</p>
+        </div>
+      </a>
+      <a class="menu__items__item">
+        <div class="menu__items__item__img">
+          <img class="menu__items__item__img__sandwich" src="./img/menu/sandwich.jpg" alt="サンドイッチの画像です">
+        </div>
+        <div class="menu__items__details">
+          <h3 class="menu__items__details__title">サンドイッチ</h3>
+          <p class="menu__items__details__cost">¥400</p>
+          <p class="menu__items__details__description">食べやすいサンドイッチ。<br>お昼はこれで決まりです。</p>
+        </div>
+      </a>
+      <a class="menu__items__item">
+        <div class="menu__items__item__img">
+          <img class="menu__items__item__img__sandwich" src="./img/menu/sandwich.jpg" alt="サンドイッチの画像です">
+        </div>
+        <div class="menu__items__details">
+          <h3 class="menu__items__details__title">サンドイッチ</h3>
+          <p class="menu__items__details__cost">¥400</p>
+          <p class="menu__items__details__description">食べやすいサンドイッチ。<br>お昼はこれで決まりです。</p>
+        </div>
+      </a>
+      <a class="menu__items__item">
+        <div class="menu__items__item__img">
+          <img class="menu__items__item__img__sandwich" src="./img/menu/sandwich.jpg" alt="サンドイッチの画像です">
+        </div>
+        <div class="menu__items__details">
+          <h3 class="menu__items__details__title">サンドイッチ</h3>
+          <p class="menu__items__details__cost">¥400</p>
+          <p class="menu__items__details__description">食べやすいサンドイッチ。<br>お昼はこれで決まりです。</p>
+        </div>
+      </a>
+      <a class="menu__items__item">
+        <div class="menu__items__item__img">
+          <img class="menu__items__item__img__sandwich" src="./img/menu/sandwich.jpg" alt="サンドイッチの画像です">
+        </div>
+        <div class="menu__items__details">
+          <h3 class="menu__items__details__title">サンドイッチ</h3>
+          <p class="menu__items__details__cost">¥400</p>
+          <p class="menu__items__details__description">食べやすいサンドイッチ。<br>お昼はこれで決まりです。</p>
+        </div>
+      </a>
+    </div>
+  </section>
+  <footer class="footer">
+    <h2 class="footer__title"><img class="footer__logo" src="./img/common_logo-white.png" alt=""></h2>
+    <ul class="footer__sns">
+      <li class="footer__sns-icon"><a href=""><img src="./img/Instagram_logo.svg" alt="Instagram"></a>
+      </li>
+      <li class="footer__sns-icon"><a href="#"><img src="./img/x-logo.svg" alt="X"></a></li>
+      <li class="footer__sns-icon"><a href="#"><img src="./img/facebook_logo.png" alt="facebook"></a></li>
+    </ul>
+    <div class="footer__address">
+      <p class="footer__address__item">所在地&nbsp;-&nbsp;東京都港区芝公園４丁目２−８</p>
+      <p class="footer__address__item">営業時間&nbsp;-&nbsp;7&nbsp;:&nbsp;00～19&nbsp;:&nbsp;00（火曜定休）</p>
+    </div>
+    <ul class="footer__site-map">
+      <li class="footer__site-map__item"><a href="">HOME</a></li>
+      <li class="footer__site-map__item"><a href="">MENU</a></li>
+      <li class="footer__site-map__item"><a href="">SHOP</a></li>
+    </ul>
+    <p class="footer__copy"><small>&copy;BAKERY</small></p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
