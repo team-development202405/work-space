@@ -14,7 +14,7 @@
   <meta name="robots" content="noindex" />
 
   <!-- サイトのタイトルを表示するための記述 -->
-  <title>--タイトルを入力してください--</title>
+  <title>Bakery</title>
   <!-- サイトの概要を表示するための記述 -->
   <meta name="description" content="--サイトの概要を入力してください--" />
 
@@ -24,6 +24,10 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif+JP:wght@200..900&display=swap"
     rel="stylesheet" />
+
+  <!-- slickを読み込むための記述 -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
 
   <!-- スタイルシートを読み込むための記述 -->
   <link rel="stylesheet" href="./css/reset.css" />
@@ -52,7 +56,21 @@
   <section class="mv">
     <div class="mv__inner inner">
       <div class="mv__slider">
-        <img src="./img/mv_image1.jpg" alt="image1" />
+        <div>
+          <img src="./img/mv_image1.jpg" alt="image1" />
+        </div>
+        <div>
+          <img src="./img/mv_image2.jpg" alt="image1" />
+        </div>
+        <div>
+          <img src="./img/mv_image3.jpg" alt="image1" />
+        </div>
+        <div>
+          <img src="./img/mv_image4.jpg" alt="image1" />
+        </div>
+        <div>
+          <img src="./img/mv_image5.jpg" alt="image1" />
+        </div>
       </div>
       <section class="mv__content">
         <h2 class="mv__title">素材を活かしたパン屋<br />Natural.</h2>
@@ -191,6 +209,20 @@
     </div>
   </section>
 
+  <section class="map">
+    <div class="iframe__wrapper">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.748241319495!2d139.7429090758791!3d35.658573931218065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbd90841d73%3A0xaa98574dc1548bf!2z44CSMTA1LTAwMTEg5p2x5Lqs6YO95riv5Yy66Iqd5YWs5ZyS77yU5LiB55uu77yS4oiS77yYIOadseS6rOOCv-ODr-ODvA!5e0!3m2!1sja!2sjp!4v1717820751334!5m2!1sja!2sjp"
+        width="600"
+        height="450"
+        style="border: 0; margin-right: calc(50% - 50vw); margin-left: calc(50% - 50vw); max-width: none; width: 100vw"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </section>
+
   <footer class="footer">
     <h2 class="footer__title">[&nbsp;素材を活かしたパン屋&nbsp;]</h2>
     <p class="footer__logo"><img src="" alt="">ロゴ</p>
@@ -211,6 +243,7 @@
     <p class="footer__copy"><small>&copy;Natural.</small></p>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script src="./js/script.js"></script>
 </body>
 

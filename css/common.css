@@ -35,21 +35,19 @@ button {
   cursor: pointer;
 }
 
-a:hover {
+/* a:hover {
   opacity: 0.5;
   transition: all 0.5s ease 0s;
-}
+} */
 
 ul,
 ol {
   list-style: none;
 }
 
-
 /* =====================================================
 section_head
 ===================================================== */
-
 
 .section__head {
   text-align: center;
@@ -67,11 +65,9 @@ section_head
   letter-spacing: 0.3em;
 }
 
-
 /* =====================================================
 button
 ===================================================== */
-
 .button {
   display: inline-block;
   color: #fff;
@@ -102,13 +98,16 @@ button
   width: 20px;
   height: 20px;
   background: url(../img/arrow-right.png) no-repeat center center/contain;
+  transition: right 0.3s;
 }
 
+.button:hover span::after {
+  right: -5px;
+}
 
 /* =====================================================
 header
 ===================================================== */
-
 
 .header {
   position: fixed;
@@ -173,7 +172,6 @@ header
   margin-right: 65px;
   border-radius: 50%;
 }
-
 
 /* =====================================================
 footer
