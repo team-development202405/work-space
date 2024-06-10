@@ -1,198 +1,180 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <!-- 文字コードの指定をする -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- スマホ、タブレット、PCのレスポンし表示するための記述 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- サイトのアイコンを表示する記述 -->
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 
-    <!-- サイトの検索にヒットしないようにする記述 -->
-    <meta name="robots" content="noindex" />
+<head>
+  <!-- 文字コードの指定をする -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- スマホ、タブレット、PCのレスポンし表示するための記述 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- サイトのアイコンを表示する記述 -->
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 
-    <!-- サイトのタイトルを表示するための記述 -->
-    <title>BAKERY</title>
-    <!-- サイトの概要を表示するための記述 -->
-    <meta name="description" content="--サイトの概要を入力してください--" />
+  <!-- サイトの検索にヒットしないようにする記述 -->
+  <meta name="robots" content="noindex" />
 
-    <!-- GoogleFontsを読み込むための記述 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif+JP:wght@200..900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- サイトのタイトルを表示するための記述 -->
+  <title>BAKERY</title>
+  <!-- サイトの概要を表示するための記述 -->
+  <meta name="description" content="--サイトの概要を入力してください--" />
 
-    <!-- スタイルシートを読み込むための記述 -->
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
+  <!-- GoogleFontsを読み込むための記述 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif+JP:wght@200..900&display=swap"
+    rel="stylesheet" />
 
-  <body>
-    <header class="header">
-      <div class="header__logo">
-        <a class="header__logo__item">
-          <h1 class="header__logo__item__title">
-            <img
-              class="header__logo__item__icon"
-              src="./img/common_logo.png"
-              alt="ロゴ"
-            />
-          </h1>
-        </a>
-      </div>
-      <div class="header__nav">
-        <ul class="header__nav__list">
-          <li class="header__nav__list__item"><a href="">HOME</a></li>
-          <li class="header__nav__list__item"><a href="">MENU</a></li>
-          <li class="header__nav__list__item"><a href="">SHOP</a></li>
-        </ul>
-        <a class="header__nav__icon" href=""
-          ><img
-            class="header__nav__icon__img"
-            src="./img/Instagram_logo-c.svg"
-            alt="Instagram"
-        /></a>
-      </div>
-    </header>
-    <!-- ここから追加する -->
-    <section class="shop mt-80">
-      <div class="shop__inner inner">
-        <div class="container">
-          <div class="section__head">
-            <h2 class="section__head__title">SHOP</h2>
-            <p class="section__head__text">店舗情報</p>
-          </div>
-          <div class="shop__content">
-            <section class="shop__info">
-              <h3 class="shop__info__title">
-                <img src="./img/common_logo.png" alt="" />
-              </h3>
-              <div class="shop__info__table">
-                <table class="table">
-                  <tr>
-                    <th>所在地</th>
-                    <td>東京都港区芝公園４丁目２−８</td>
-                  </tr>
-                  <tr>
-                    <th>営業時間</th>
-                    <td>7:00～19:00（火曜定休）</td>
-                  </tr>
-                  <tr>
-                    <th>電話番号</th>
-                    <td>00-0000-0000</td>
-                  </tr>
-                  <tr>
-                    <th>備考</th>
-                    <td>カフェ併設 / 東京駅徒歩45分</td>
-                  </tr>
-                </table>
-              </div>
-            </section>
-            <div class="shop__image">
-              <img src="./img/shop-image.jpg" alt="" />
+  <!-- スタイルシートを読み込むための記述 -->
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__logo">
+      <a class="header__logo__item" href="./index.html">
+        <h1 class="header__logo__item__title">
+          <img class="header__logo__item__icon" src="./img/common_logo.png" alt="ロゴ" />
+        </h1>
+      </a>
+    </div>
+    <div class="header__nav">
+      <ul class="header__nav__list">
+        <li class="header__nav__list__item"><a href="./index.html">HOME</a></li>
+        <li class="header__nav__list__item"><a href="./menu.html">MENU</a></li>
+        <li class="header__nav__list__item"><a href="./shop.html">SHOP</a></li>
+      </ul>
+      <a class="header__nav__icon" href="#"><img class="header__nav__icon__img" src="./img/Instagram_logo-c.svg"
+          alt="Instagram" /></a>
+    </div>
+  </header>
+  <!-- ここから追加する -->
+  <section class="shop mt-80">
+    <div class="shop__inner inner">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__head__title">SHOP</h2>
+          <p class="section__head__text">店舗情報</p>
+        </div>
+        <div class="shop__content">
+          <section class="shop__info">
+            <h3 class="shop__info__title">
+              <img src="./img/common_logo.png" alt="" />
+            </h3>
+            <div class="shop__info__table">
+              <table class="table">
+                <tr>
+                  <th>所在地</th>
+                  <td>東京都港区芝公園４丁目２−８</td>
+                </tr>
+                <tr>
+                  <th>営業時間</th>
+                  <td>7:00～19:00（火曜定休）</td>
+                </tr>
+                <tr>
+                  <th>電話番号</th>
+                  <td>00-0000-0000</td>
+                </tr>
+                <tr>
+                  <th>備考</th>
+                  <td>カフェ併設 / 東京駅徒歩45分</td>
+                </tr>
+              </table>
             </div>
+          </section>
+          <div class="shop__image">
+            <img src="./img/shop-image.jpg" alt="" />
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- <section class="shop__map">
-      <div class="iframe__wrapper">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.748241319495!2d139.7429090758791!3d35.658573931218065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbd90841d73%3A0xaa98574dc1548bf!2z44CSMTA1LTAwMTEg5p2x5Lqs6YO95riv5Yy66Iqd5YWs5ZyS77yU5LiB55uu77yS4oiS77yYIOadseS6rOOCv-ODr-ODvA!5e0!3m2!1sja!2sjp!4v1717820751334!5m2!1sja!2sjp"
-          width="600" height="450"
-          style="border: 0;"
-          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </section> -->
-
-    <section class="gallery section__head">
-      <h2 class="gallery__title section__head__title">GALLERY</h2>
-      <p class="gallery__text section__head__text">お店の様子</p>
-      <div class="gallery__content__wrap">
-        <div class="gallery__content">
-          <p class="gallery__content-img">
-            <img src="./img/shop_gallery-item01.jpg" alt="" />
-          </p>
-          <section class="gallery__content-item">
-            <h3 class="gallery__content-item__title">店内の雰囲気</h3>
-            <p class="gallery__content-item__text">
-              明るく開放的な店内は、木の温もりが感じられる心地よい空間です。自然光が差し込む大きな窓や木製の家具が、リラックスできる雰囲気を演出しています。広々とした通路と見やすい商品棚で、ゆったりとパンを選んでいただけます。座り心地の良いベンチやテーブルで、購入したパンをその場で楽しめるスペースもご用意しています。<br />お子様連れのお客様にも配慮し、キッズコーナーやベビーチェアも完備しています。季節ごとに変わる装飾と、心地よい音楽とともに、焼きたてのパンの香りに包まれた特別なひとときをお過ごしください。
-            </p>
-          </section>
-        </div>
-        <div class="gallery__content f-reverse">
-          <p class="gallery__content-img">
-            <img src="./img/shop_gallery-item02.jpg" alt="" />
-          </p>
-          <section class="gallery__content-item">
-            <h3 class="gallery__content-item__title">職人の技</h3>
-            <p class="gallery__content-item__text">
-              パン作りのプロセスをぜひご覧ください。厳選された材料を使用し、長年の経験と情熱で作り上げる職人たちの技は圧巻です。生地をこねる丁寧な手仕事や、発酵のタイミングを見極める繊細な技術、そして焼き上がる瞬間まで一切の妥協を許さない姿勢は、手作りの温かみを感じていただけることでしょう。<br />
-              お客様に最高のパンをお届けするため、毎朝早くから仕込みを始め、焼きたての美味しさを追求しています。その一つひとつの工程には、職人のこだわりと愛情が込められています。ぜひ、その熱意と技術が詰まったパンを味わいにお越しください。
-            </p>
-          </section>
-        </div>
-        <div class="gallery__content">
-          <p class="gallery__content-img">
-            <img src="./img/shop_gallery-item03.jpg" alt="" />
-          </p>
-          <section class="gallery__content-item">
-            <h3 class="gallery__content-item__title">焼きたてのパン</h3>
-            <p class="gallery__content-item__text">
-              毎朝焼き上げられる新鮮なパンの数々。バゲットやクロワッサン、クリームパンなど、種類豊富なパンがずらりと並ぶ光景は圧巻です。香ばしい香りが店内に広がり、見るだけで食欲をそそります。<br />私たちのパンは、最高品質の材料を使用し、職人が一つひとつ丁寧に焼き上げています。外はカリッと、中はふんわりとしたバゲット、バターの風味豊かなクロワッサン、そして優しい甘さのクリームパンなど、どれも自信を持ってお届けする逸品です。<br />季節限定の特別なパンや、毎日違った種類のパンもお楽しみいただけます。どのパンも、その日のうちに召し上がっていただきたいフレッシュな美味しさです。ぜひ店頭で、その魅力をお確かめください。
-            </p>
-          </section>
-        </div>
-        <div class="gallery__content f-reverse">
-          <p class="gallery__content-img">
-            <img src="./img/shop_gallery-item04.jpg" alt="" />
-          </p>
-          <section class="gallery__content-item">
-            <h3 class="gallery__content-item__title">特別なイベントと商品</h3>
-            <p class="gallery__content-item__text">
-              季節ごとのイベントや特別な商品の紹介もこちらでご案内します。春には桜の香りが楽しめるパン、夏にはフルーツを使った爽やかなパン、秋には栗やさつまいものパン、冬にはホリデーシーズン限定のパンなど、四季折々の味覚をお楽しみいただけます。<br />クリスマスやバレンタインなどの特別な日には、イベントにちなんだオリジナル商品もご用意。見た目にも楽しく、贈り物にも最適な商品を取り揃えています。<br />最新情報は店頭やウェブサイトで随時お知らせいたします。季節ごとの特別なパンやイベントをお楽しみに。皆様に素敵なひとときをお届けできるよう、心を込めて準備しています。
-            </p>
-          </section>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <h2 class="footer__title">
-        <img class="footer__logo" src="./img/common_logo-white.png" alt="" />
-      </h2>
-      <ul class="footer__sns">
-        <li class="footer__sns-icon">
-          <a href=""><img src="./img/Instagram_logo.svg" alt="Instagram" /></a>
-        </li>
-        <li class="footer__sns-icon">
-          <a href="#"><img src="./img/x-logo.svg" alt="X" /></a>
-        </li>
-        <li class="footer__sns-icon">
-          <a href="#"><img src="./img/facebook_logo.png" alt="facebook" /></a>
-        </li>
-      </ul>
-      <div class="footer__address">
-        <p class="footer__address__item">
-          所在地&nbsp;-&nbsp;東京都港区芝公園４丁目２−８
+    </div>
+  </section>
+  <section class="gallery section__head">
+    <h2 class="gallery__title section__head__title">GALLERY</h2>
+    <p class="gallery__text section__head__text">お店の様子</p>
+    <div class="gallery__content__wrap">
+      <div class="gallery__content">
+        <p class="gallery__content-img">
+          <img src="./img/shop_gallery-item01.jpg" alt="" />
         </p>
-        <p class="footer__address__item">
-          営業時間&nbsp;-&nbsp;7&nbsp;:&nbsp;00～19&nbsp;:&nbsp;00（火曜定休）
-        </p>
+        <section class="gallery__content-item">
+          <h3 class="gallery__content-item__title">店内の雰囲気</h3>
+          <p class="gallery__content-item__text">
+            明るく開放的な店内は、木の温もりが感じられる心地よい空間です。自然光が差し込む大きな窓や木製の家具が、リラックスできる雰囲気を演出しています。広々とした通路と見やすい商品棚で、ゆったりとパンを選んでいただけます。座り心地の良いベンチやテーブルで、購入したパンをその場で楽しめるスペースもご用意しています。<br />お子様連れのお客様にも配慮し、キッズコーナーやベビーチェアも完備しています。季節ごとに変わる装飾と、心地よい音楽とともに、焼きたてのパンの香りに包まれた特別なひとときをお過ごしください。
+          </p>
+        </section>
       </div>
-      <ul class="footer__site-map">
-        <li class="footer__site-map__item"><a href="">HOME</a></li>
-        <li class="footer__site-map__item"><a href="">MENU</a></li>
-        <li class="footer__site-map__item"><a href="">SHOP</a></li>
-      </ul>
-      <p class="footer__copy"><small>&copy;BAKERY</small></p>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./js/main.js"></script>
-  </body>
+      <div class="gallery__content f-reverse">
+        <p class="gallery__content-img">
+          <img src="./img/shop_gallery-item02.jpg" alt="" />
+        </p>
+        <section class="gallery__content-item">
+          <h3 class="gallery__content-item__title">職人の技</h3>
+          <p class="gallery__content-item__text">
+            パン作りのプロセスをぜひご覧ください。厳選された材料を使用し、長年の経験と情熱で作り上げる職人たちの技は圧巻です。生地をこねる丁寧な手仕事や、発酵のタイミングを見極める繊細な技術、そして焼き上がる瞬間まで一切の妥協を許さない姿勢は、手作りの温かみを感じていただけることでしょう。<br />
+            お客様に最高のパンをお届けするため、毎朝早くから仕込みを始め、焼きたての美味しさを追求しています。その一つひとつの工程には、職人のこだわりと愛情が込められています。ぜひ、その熱意と技術が詰まったパンを味わいにお越しください。
+          </p>
+        </section>
+      </div>
+      <div class="gallery__content">
+        <p class="gallery__content-img">
+          <img src="./img/shop_gallery-item03.jpg" alt="" />
+        </p>
+        <section class="gallery__content-item">
+          <h3 class="gallery__content-item__title">焼きたてのパン</h3>
+          <p class="gallery__content-item__text">
+            毎朝焼き上げられる新鮮なパンの数々。バゲットやクロワッサン、クリームパンなど、種類豊富なパンがずらりと並ぶ光景は圧巻です。香ばしい香りが店内に広がり、見るだけで食欲をそそります。<br />私たちのパンは、最高品質の材料を使用し、職人が一つひとつ丁寧に焼き上げています。外はカリッと、中はふんわりとしたバゲット、バターの風味豊かなクロワッサン、そして優しい甘さのクリームパンなど、どれも自信を持ってお届けする逸品です。<br />季節限定の特別なパンや、毎日違った種類のパンもお楽しみいただけます。どのパンも、その日のうちに召し上がっていただきたいフレッシュな美味しさです。ぜひ店頭で、その魅力をお確かめください。
+          </p>
+        </section>
+      </div>
+      <div class="gallery__content f-reverse">
+        <p class="gallery__content-img">
+          <img src="./img/shop_gallery-item04.jpg" alt="" />
+        </p>
+        <section class="gallery__content-item">
+          <h3 class="gallery__content-item__title">特別なイベントと商品</h3>
+          <p class="gallery__content-item__text">
+            季節ごとのイベントや特別な商品の紹介もこちらでご案内します。春には桜の香りが楽しめるパン、夏にはフルーツを使った爽やかなパン、秋には栗やさつまいものパン、冬にはホリデーシーズン限定のパンなど、四季折々の味覚をお楽しみいただけます。<br />クリスマスやバレンタインなどの特別な日には、イベントにちなんだオリジナル商品もご用意。見た目にも楽しく、贈り物にも最適な商品を取り揃えています。<br />最新情報は店頭やウェブサイトで随時お知らせいたします。季節ごとの特別なパンやイベントをお楽しみに。皆様に素敵なひとときをお届けできるよう、心を込めて準備しています。
+          </p>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <h2 class="footer__title">
+      <img class="footer__logo" src="./img/common_logo-white.png" alt="" />
+    </h2>
+    <ul class="footer__sns">
+      <li class="footer__sns-icon">
+        <a href=""><img src="./img/Instagram_logo.svg" alt="Instagram" /></a>
+      </li>
+      <li class="footer__sns-icon">
+        <a href="#"><img src="./img/x-logo.svg" alt="X" /></a>
+      </li>
+      <li class="footer__sns-icon">
+        <a href="#"><img src="./img/facebook_logo.png" alt="facebook" /></a>
+      </li>
+    </ul>
+    <div class="footer__address">
+      <p class="footer__address__item">
+        所在地&nbsp;-&nbsp;東京都港区芝公園４丁目２−８
+      </p>
+      <p class="footer__address__item">
+        営業時間&nbsp;-&nbsp;7&nbsp;:&nbsp;00～19&nbsp;:&nbsp;00（火曜定休）
+      </p>
+    </div>
+    <ul class="footer__site-map">
+      <li class="footer__site-map__item"><a href="./index.html">HOME</a></li>
+      <li class="footer__site-map__item"><a href="./menu.html">MENU</a></li>
+      <li class="footer__site-map__item"><a href="./shop.html">SHOP</a></li>
+    </ul>
+    <p class="footer__copy"><small>&copy;BAKERY</small></p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
 </html>
