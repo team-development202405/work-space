@@ -165,7 +165,7 @@ header
 }
 
 .header__nav__icon__img {
-  width: 25px;
+  width: 29px;
   margin-left: 40px;
   margin-right: 65px;
 }
@@ -197,17 +197,13 @@ footer
 
 .footer__sns {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   justify-content: center;
   margin-top: 40px;
 }
 
 .footer__sns-icon a {
-  width: 20px;
-}
-
-.footer__sns-icon a img {
-  /* padding: 0 10px; */
+  width: 29px;
 }
 
 .footer__address {
